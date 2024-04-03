@@ -1,0 +1,26 @@
+#objectif
+
+CETTE PARTIE PEUT FONCTIONNER A PART ENTIERE. (le dossier audiocodeonly étant le dossier projet)
+
+Ce code a pour but de permettre la génération de fichiers audio en format .wav
+
+Le code fonctionne en continu :
+Pendant un certain laps de temps, la fonction ** récupère les décibels de la pièce afin de définir un seuil. Ce seuil représente ainsi le bruit minimum à dépasser afin de repérer la présence d'un bruit non naturel à l'espace. Dans notre cas, repérer donc un bruit potentiellement animal.
+
+Quand le seuil de décibel capté par le micro est dépassé, on commence à enregistrer le son. L'enregistrement se termine quand nous sommes en-dessous du seuil décibel pendant 3 secondes d'affiliés.
+
+Le fichier généré va ensuite être stocké dans le dossier dédié sous le nom "output_heure
+minute
+seconde.wav"
+
+Des fonctions supplémentaires ont été ajouté afin de permettre davantage de contrôle par le Front.
+
+#installation
+
+Installer les bibliothèques requises à l'aide du requirement.txt
+(pip install -r requirements.txt)
+
+Il est préférable d'utiliser un environnement virtuel pour Python. Anaconda n'ayant par exemple pas la bibliothèque PyAudio de disponible.
+
+#Auteur
+Hugo PATRY (Hugo.patry@groupe-esigelec.org)

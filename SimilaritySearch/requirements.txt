@@ -1,0 +1,12 @@
+torchaudio
+numpy
+soundfile
+statistics
+pandas
+pyarrow
+torchaudio
+matplotlib
+torch
+transformers
+faiss-cpu
+gradio
